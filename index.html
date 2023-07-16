@@ -21,22 +21,33 @@
                 <h2>Login</h2>
 
                 <div class="card-login-content">
-                    <label for="">Usuário</label>
-                    <input type="text" placeholder="Usuário">
+                    <label for="user">Usuário</label>
+                    <input type="text" placeholder="Usuário" id="user">
 
                 </div>
 
                 <div class="card-login-content">
-                    <label for="">Senha</label>
-                    <input type="password" placeholder="Senha">
+                    <label for="pass">Senha</label>
+                    <input type="password" placeholder="Senha" id="pass">
 
-                    <button class="btn-login">Login</button>
+                    <button class="btn-login" onclick="alerta()">Login</button>
                 </div>
 
             </div>
         </div>
 
     </div>
+
+    <script>
+        function alerta() {
+            let inputUser = document.querySelector("#user");
+            let inputPass = document.querySelector("#pass");
+
+            if(inputUser.value !== '' && inputPass.value !== '') {
+                alert("Desenvolvendo...");
+            }
+        }
+    </script>
 
 </body>
 </html>

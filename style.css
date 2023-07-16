@@ -34,6 +34,7 @@ body * {
 .left-login h1 {
     color: #77ffc0;
     font-size: 3vw;
+    font-weight: 1000;
 }
 
 .right-login {
@@ -88,8 +89,13 @@ body * {
     color: #f0ffff94;
 }
 
+.card-login-content input {
+    color: #f0ffff94;
+}
+
 .card-login-content label {
     color: #f0ffffde;
+    
     margin-bottom: 5px;
 }
 
@@ -107,15 +113,24 @@ body * {
     letter-spacing: 1.8;
     cursor: pointer;
     font-weight: 800;
+
+    transition-property: background-color, transform;
+    transition-duration: .35s;
+    transition-timing-function: ease;
+    transition-delay: .02s;
 }
 
-@media only screen and (max-width:950px) {
+.btn-login:hover {
+    background-color: #06bf69;
+}
+
+@media only screen and (max-width: 59.27rem) {
     .card-login {
         width: 85%;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 43.75rem) {
     .container {
         flex-direction: column;
     }
@@ -130,7 +145,7 @@ body * {
     }
 
     .left-login-image {
-        width: 50vw;
+        width: 68vw;
     }
 
     .right-login {
